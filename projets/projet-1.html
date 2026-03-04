@@ -1,105 +1,159 @@
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Projet 1 — Portfolio E5</title>
+<main class="container">
+  <a class="btn" href="../projets.html">← Retour aux projets</a>
 
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <script defer src="../assets/js/main.js"></script>
-</head>
+  <section class="hero" style="padding: 24px 0 10px;">
+    <div class="badge">🧩 Support • Ticketing • OmegAssist</div>
+    <h1>Projet 1 — Gestion des incidents et demandes utilisateurs</h1>
+    <p class="lead">
+      Traitement de tickets via <strong>OmegAssist</strong> : prise en charge, analyse, diagnostic,
+      intervention, suivi et clôture. Cas gérés : renouvellement de certificats VPN, mise à jour
+      LibreOffice 2025, installation Circl, installation / mise en place d’une BALF.
+    </p>
 
-<h1>Projet 1 : Gestion des incidents informatiques</h1>
+    <div class="meta" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+      <span class="tag">Support</span>
+      <span class="tag">Poste de travail</span>
+      <span class="tag">Télétravail / VPN</span>
+      <span class="tag">Maintenance logicielle</span>
+      <span class="tag">Traçabilité</span>
+    </div>
+  </section>
 
-<h2>Contexte</h2>
-<p>
-Dans le cadre de mon stage, j’ai participé aux activités du support informatique.
-Ma mission consistait à traiter les demandes et incidents signalés par les utilisateurs
-à l’aide de l’outil de gestion de tickets <strong>OmegAssist</strong>.
-</p>
+  <div class="grid two-cols" style="margin-top:16px;">
+  
+    <section class="card left">
+      <h2>Contexte</h2>
+      <p>
+        Dans le cadre de mes missions au support informatique, j’ai participé à la gestion et au traitement
+        des incidents et demandes utilisateurs à l’aide de l’outil de ticketing <strong>OmegAssist</strong>.
+        L’objectif était de rétablir rapidement un fonctionnement normal des postes de travail tout en
+        assurant un suivi rigoureux et une traçabilité des actions réalisées.
+      </p>
 
-<p>
-L’objectif était d’assurer le bon fonctionnement des postes de travail des agents
-en analysant les incidents, en réalisant les interventions nécessaires et en assurant
-le suivi des demandes jusqu’à leur résolution.
-</p>
+      <h2 style="margin-top:18px;">Démarche (workflow ticket)</h2>
+      <ol>
+        <li><strong>Consultation</strong> des tickets ouverts (contexte, utilisateur, matériel, urgence).</li>
+        <li><strong>Analyse</strong> de la demande / de l’incident (logiciel, configuration, accès distant…).</li>
+        <li><strong>Diagnostic</strong> : vérifications (paramètres, droits, configuration poste, tests).</li>
+        <li><strong>Intervention</strong> : correction, installation, mise à jour ou paramétrage.</li>
+        <li><strong>Suivi</strong> : mise à jour du ticket (actions réalisées, avancement, résultats).</li>
+        <li><strong>Validation + clôture</strong> : confirmation utilisateur, solution documentée.</li>
+      </ol>
 
-<h2>Activités réalisées</h2>
+      <h2 style="margin-top:18px;">Cas traités (Problème → Action → Résultat)</h2>
 
-<p>
-Je consultais régulièrement les tickets ouverts dans l’outil OmegAssist afin de
-prendre connaissance des incidents ou demandes signalés par les utilisateurs.
-Chaque ticket contenait des informations sur le problème rencontré, l’utilisateur
-concerné ainsi que le matériel impacté.
-</p>
+      <div class="card" style="margin-top:10px;">
+        <h3 style="margin:0 0 6px;">Renouvellement de certificats VPN (télétravail)</h3>
+        <p><strong>Problème :</strong> accès VPN impossible ou certificat expiré empêchant la connexion distante.</p>
+        <p><strong>Action :</strong> renouvellement / réinstallation des certificats nécessaires, contrôle de la configuration VPN puis test de connexion.</p>
+        <p><strong>Résultat :</strong> accès distant rétabli et validé avec l’agent.</p>
+        <div class="meta" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+          <span class="tag">VPN</span><span class="tag">Certificats</span><span class="tag">Accès distant</span>
+        </div>
+      </div>
 
-<p>
-Après la prise de connaissance du ticket, j’effectuais une analyse du problème
-afin d’identifier sa nature (logiciel, accès, configuration, etc.) et de déterminer
-les actions nécessaires pour le résoudre.
-</p>
+      <div class="card" style="margin-top:10px;">
+        <h3 style="margin:0 0 6px;">Mise à jour LibreOffice vers la version 2025</h3>
+        <p><strong>Besoin :</strong> disposer des dernières fonctionnalités et correctifs de sécurité.</p>
+        <p><strong>Action :</strong> mise à jour / installation de LibreOffice 2025 sur postes utilisateurs, vérification du lancement et des documents.</p>
+        <p><strong>Résultat :</strong> application mise à jour et opérationnelle sur les postes concernés.</p>
+        <div class="meta" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+          <span class="tag">Mise à jour</span><span class="tag">Logiciel</span><span class="tag">Sécurité</span>
+        </div>
+      </div>
 
-<p>
-Une fois le diagnostic réalisé, je procédais aux différentes interventions
-techniques nécessaires pour résoudre l’incident ou répondre à la demande.
-</p>
+      <div class="card" style="margin-top:10px;">
+        <h3 style="margin:0 0 6px;">Installation du logiciel CIRCL</h3>
+        <p><strong>Besoin :</strong> installer le logiciel sur un poste de travail pour permettre son utilisation.</p>
+        <p><strong>Action :</strong> installation, configuration et vérification du bon fonctionnement (tests de lancement / prérequis).</p>
+        <p><strong>Résultat :</strong> logiciel fonctionnel et prêt à l’usage sur le poste utilisateur.</p>
+        <div class="meta" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+          <span class="tag">Installation</span><span class="tag">Configuration</span><span class="tag">Poste</span>
+        </div>
+      </div>
 
-<h2>Exemples d’interventions réalisées</h2>
+      <div class="card" style="margin-top:10px;">
+        <h3 style="margin:0 0 6px;">Installation / mise en place d’une BALF</h3>
+        <p><strong>Besoin :</strong> créer/mettre en service une boîte mail partagée pour un usage collectif.</p>
+        <p><strong>Action :</strong> mise en place et configuration de la BALF (accès, paramétrage), puis tests d’envoi/réception.</p>
+        <p><strong>Résultat :</strong> BALF opérationnelle pour les utilisateurs concernés.</p>
+        <div class="meta" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+          <span class="tag">Messagerie</span><span class="tag">BALF</span><span class="tag">Configuration</span>
+        </div>
+      </div>
 
-<ul>
-<li>
-<strong>Renouvellement de certificats VPN</strong> afin de permettre aux agents
-de se connecter au réseau de l’organisation en télétravail de manière sécurisée.
-</li>
+      <h2 style="margin-top:18px;">Suivi et traçabilité</h2>
+      <p>
+        Tout au long du traitement, je mettais à jour les informations dans <strong>OmegAssist</strong>
+        (actions réalisées, état d’avancement, solution retenue). Cette traçabilité permet de conserver
+        un historique des interventions et de faciliter la prise en charge d’incidents similaires.
+      </p>
 
-<li>
-<strong>Mise à jour de LibreOffice vers la version 2025</strong> sur plusieurs
-postes utilisateurs afin de bénéficier des nouvelles fonctionnalités et correctifs
-de sécurité.
-</li>
+      <h2 style="margin-top:18px;">Résultats</h2>
+      <p>
+        Les incidents et demandes ont été traités efficacement, permettant aux utilisateurs de retrouver
+        rapidement un fonctionnement normal. Les opérations de maintenance (mises à jour, configuration
+        VPN, installations) ont contribué à maintenir un environnement de travail stable et opérationnel.
+      </p>
 
-<li>
-<strong>Installation du logiciel CIRCL</strong> sur un poste de travail et
-configuration nécessaire à son bon fonctionnement.
-</li>
+      <h2 style="margin-top:18px;">Preuves</h2>
+      <p class="lead" style="margin-top:-6px;">
+        (Ajoute ici des captures d’écran / extraits de procédures. Renomme bien tes fichiers dans <code>assets/img</code>.)
+      </p>
 
-<li>
-<strong>Installation d’une BALF (boîte aux lettres fonctionnelle)</strong>
-permettant la gestion d’une adresse email partagée par plusieurs utilisateurs.
-</li>
+      <div class="grid" style="margin-top:10px;">
+        <div class="card" style="grid-column: span 6;">
+          <h3 style="margin:0 0 6px;">Capture OmegAssist</h3>
+          <p><small>Ex : liste des tickets / ticket détaillé (en masquant les infos sensibles).</small></p>
+          <img src="../assets/img/omegassist.png" alt="OmegAssist" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.12);" />
+        </div>
 
-</ul>
+        <div class="card" style="grid-column: span 6;">
+          <h3 style="margin:0 0 6px;">Mise à jour / installation</h3>
+          <p><small>Ex : LibreOffice 2025 / Circl (capture après installation).</small></p>
+          <img src="../assets/img/libreoffice-update.png" alt="Mise à jour LibreOffice" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.12);" />
+        </div>
+      </div>
+    </section>
 
-<p>
-Pendant toute la durée du traitement des incidents, je mettais à jour les informations
-dans l’outil OmegAssist afin d’assurer le suivi des tickets et la traçabilité
-des interventions réalisées.
-</p>
+  
+    <aside class="card right">
+      <h2>Fiche rapide</h2>
+      <p><strong>Outil :</strong> OmegAssist</p>
+      <p><strong>Périmètre :</strong> incidents + demandes utilisateurs</p>
+      <p><strong>Type :</strong> support poste de travail</p>
 
-<p>
-Une fois le problème résolu et validé avec l’utilisateur, je procédais à la
-clôture du ticket dans l’outil.
-</p>
+      <div class="hr"></div>
 
-<h2>Résultats obtenus</h2>
+      <h2>Compétences mobilisées</h2>
+      <ul>
+        <li>Collecte et suivi des demandes utilisateurs</li>
+        <li>Analyse et traitement des incidents</li>
+        <li>Installation et mise à jour de logiciels</li>
+        <li>Configuration d’accès sécurisés (VPN, certificats)</li>
+        <li>Communication utilisateur + validation de résolution</li>
+        <li>Traçabilité des interventions (ticketing)</li>
+      </ul>
 
-<p>
-Les incidents ont été traités efficacement, permettant aux utilisateurs de
-retrouver un fonctionnement normal de leur poste de travail. La mise à jour
-des logiciels et les opérations de configuration réalisées ont également
-contribué à améliorer la stabilité et la sécurité de l’environnement informatique.
-</p>
+      <div class="hr"></div>
 
-<h2>Compétences mobilisées</h2>
+      <h2>Points à dire à l’oral</h2>
+      <ul>
+        <li>Comment tu priorises un ticket (impact / urgence)</li>
+        <li>Ta méthode de diagnostic (tests, vérifs, hypothèses)</li>
+        <li>Comment tu documentes la solution dans le ticket</li>
+        <li>Validation utilisateur avant clôture</li>
+      </ul>
 
-<ul>
-<li>Collecte et suivi des demandes utilisateurs</li>
-<li>Analyse et traitement des incidents informatiques</li>
-<li>Installation et mise à jour de logiciels</li>
-<li>Configuration d’accès sécurisés (VPN)</li>
-<li>Communication avec les utilisateurs</li>
-<li>Suivi et traçabilité des interventions</li>
-</ul>
-<h2>Preuves</h2>
+      <div class="actions">
+        <a class="btn primary" href="../tableau.html">Voir le tableau E5</a>
+        <a class="btn" href="../contact.html">Contact</a>
+      </div>
+    </aside>
+  </div>
 
-<img src="../assets/img/omegassist.png" width="600">
-<p>Interface de l’outil de gestion de tickets OmegAssist.</p>
+  <footer class="footer">
+    <small>© <span data-year></span> — emiluxjpg</small>
+  </footer>
+</main>
 
