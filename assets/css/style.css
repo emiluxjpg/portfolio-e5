@@ -69,12 +69,48 @@ a:hover{opacity:.9}
 h1{font-size: clamp(28px, 4vw, 44px); line-height:1.1; margin:14px 0}
 .lead{color:var(--muted); max-width: 70ch}
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+.grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
 }
 
+/* grille compétences */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+
+/* cartes compétences */
+
+.skill-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.skill-card h2 {
+  margin-bottom: 10px;
+}
+
+.skill-card ul {
+  padding-left: 18px;
+}
+
+.skill-card li {
+  margin-bottom: 6px;
+}
 .card{
   background: rgba(18,26,51,.8);
   border: 1px solid var(--border);
