@@ -148,10 +148,10 @@
             <h3 style="margin:0 0 6px;">Installation / mise à jour</h3>
             <p><small>Exemple d’intervention sur un logiciel : mise à jour LibreOffice ou installation de Circl.</small></p>
             <img
-              src="../assets/img/libreoffice-update.png"
-              class="zoomable"
-              alt="Mise à jour LibreOffice"
-              style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.12);"
+            src="../assets/img/fluke-test.png"
+            class="zoomable"
+            alt="Test Fluke"
+            style="width:100%; border-radius:12px;">
             />
           </div>
         </div>
@@ -191,26 +191,8 @@
   </main>
 
   <div id="lightbox">
-    <img id="lightbox-img" alt="Agrandissement de l'image">
-  </div>
-
-  <script>
-    const images = document.querySelectorAll(".zoomable");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-
-    images.forEach((img) => {
-      img.addEventListener("click", () => {
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-      });
-    });
-
-    lightbox.addEventListener("click", () => {
-      lightbox.style.display = "none";
-      lightboxImg.src = "";
-    });
+  <img id="lightbox-img" alt="">
+</div>
   </script>
 </body>
 </html>
