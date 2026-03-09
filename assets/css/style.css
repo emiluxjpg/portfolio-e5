@@ -69,10 +69,10 @@ a:hover{opacity:.9}
 h1{font-size: clamp(28px, 4vw, 44px); line-height:1.1; margin:14px 0}
 .lead{color:var(--muted); max-width: 70ch}
 
-.grid{
-  display:grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
 }
 
 .card{
