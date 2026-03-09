@@ -1,11 +1,30 @@
-(() => {
-  const path = location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".menu a").forEach(a => {
-    const href = a.getAttribute("href");
-    if (href === path) a.classList.add("active");
+/* Année automatique dans le footer */
+
+const year = document.querySelector("[data-year]");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+
+/* LIGHTBOX IMAGES */
+
+const images = document.querySelectorAll(".zoomable");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+if (images.length > 0 && lightbox && lightboxImg) {
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    });
   });
 
-  // Footer year
-  const y = document.querySelector("[data-year]");
-  if (y) y.textContent = new Date().getFullYear();
-})();
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  });
+
+}
